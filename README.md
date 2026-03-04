@@ -108,4 +108,3 @@ Changelogs appear in `changelog/<account_id>.md`.
 
 ---
 
-*This repository satisfies the Clara Answers Intern assignment by showcasing a zero‑cost, extendable automation pipeline.*
