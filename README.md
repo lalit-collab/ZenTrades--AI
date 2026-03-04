@@ -1,4 +1,4 @@
-# Zero‑Cost Automation Pipeline for Clara Answers Intern Assignment
+# Zero‑Cost Automation Pipeline 
 
 ## Project Overview
 
