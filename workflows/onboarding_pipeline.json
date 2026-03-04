@@ -1,0 +1,46 @@
+{
+  "name": "Onboarding Call Update",
+  "nodes": [
+    {
+      "id": "IngestOnboarding",
+      "type": "Webhook",
+      "name": "Ingest Onboarding Transcript"
+    },
+    {
+      "id": "NormalizeInput",
+      "type": "Function",
+      "name": "Normalize Text"
+    },
+    {
+      "id": "LookupMemo",
+      "type": "Function",
+      "name": "Load Existing Memo"
+    },
+    {
+      "id": "ExtractUpdates",
+      "type": "Function",
+      "name": "Extract Updated Fields"
+    },
+    {
+      "id": "PatchMemo",
+      "type": "Function",
+      "name": "Apply Updates"
+    },
+    {
+      "id": "GenerateAgentV2",
+      "type": "Function",
+      "name": "Generate Agent Spec v2"
+    },
+    {
+      "id": "SaveOutputs",
+      "type": "Function",
+      "name": "Write v2 to Repo"
+    },
+    {
+      "id": "GenerateChangelog",
+      "type": "Function",
+      "name": "Create Changelog Diff"
+    }
+  ],
+  "connections": {}
+}

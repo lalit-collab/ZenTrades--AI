@@ -1,0 +1,28 @@
+{
+  "account_id": "sample_account",
+  "company_name": "Sample Company Inc.",
+  "business_hours": {
+    "days": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "start": "09:00",
+    "end": "17:00",
+    "timezone": "America/New_York"
+  },
+  "office_address": "123 Main St, Anytown, NY",
+  "services_supported": ["IT Support","Network Monitoring"],
+  "emergency_definition": ["Server down","Security breach"],
+  "emergency_routing_rules": {
+    "priority_order": ["on-call engineer","manager"],
+    "fallback": "leave voicemail and email"
+  },
+  "non_emergency_routing_rules": {"helpdesk":"support@sample.com"},
+  "call_transfer_rules": {
+    "timeout_seconds": "30",
+    "retry_attempts": "2",
+    "fallback_message": "Please hold while we reconnect you."
+  },
+  "integration_constraints": ["No Salesforce integration"],
+  "after_hours_flow_summary": "Collect info and page on-call.",
+  "office_hours_flow_summary": "Route to helpdesk or engineer.",
+  "questions_or_unknowns": [],
+  "notes": "Initial demo call memo."
+}

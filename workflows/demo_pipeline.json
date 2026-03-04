@@ -1,0 +1,46 @@
+{
+  "name": "Demo Call Processing",
+  "nodes": [
+    {
+      "id": "IngestTranscript",
+      "type": "Webhook",
+      "name": "Ingest Transcript"
+    },
+    {
+      "id": "NormalizeInput",
+      "type": "Function",
+      "name": "Normalize Text"
+    },
+    {
+      "id": "AssignID",
+      "type": "Function",
+      "name": "Assign Account ID"
+    },
+    {
+      "id": "ExtractFields",
+      "type": "Function",
+      "name": "Extract Structured Fields"
+    },
+    {
+      "id": "GenerateMemo",
+      "type": "Function",
+      "name": "Generate Memo JSON"
+    },
+    {
+      "id": "GenerateAgent",
+      "type": "Function",
+      "name": "Generate Agent Spec v1"
+    },
+    {
+      "id": "SaveOutputs",
+      "type": "Function",
+      "name": "Write to Repository"
+    },
+    {
+      "id": "CreateTask",
+      "type": "Function",
+      "name": "Create Tracker Entry"
+    }
+  ],
+  "connections": {}
+}

@@ -1,0 +1,28 @@
+{
+  "account_id": "sample_account",
+  "company_name": "Sample Company Inc.",
+  "business_hours": {
+    "days": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "start": "08:00",
+    "end": "18:00",
+    "timezone": "America/New_York"
+  },
+  "office_address": "123 Main St, Anytown, NY",
+  "services_supported": ["IT Support","Network Monitoring","Cloud Services"],
+  "emergency_definition": ["Server down","Security breach","Data loss"],
+  "emergency_routing_rules": {
+    "priority_order": ["on-call engineer","manager","CEO"],
+    "fallback": "leave voicemail and SMS team"
+  },
+  "non_emergency_routing_rules": {"helpdesk":"support@sample.com"},
+  "call_transfer_rules": {
+    "timeout_seconds": "30",
+    "retry_attempts": "3",
+    "fallback_message": "Please hold while we reconnect you."
+  },
+  "integration_constraints": ["No Salesforce integration"],
+  "after_hours_flow_summary": "Collect info and page on-call; if after midnight, escalate.",
+  "office_hours_flow_summary": "Route to helpdesk or engineer; include Saturday support.",
+  "questions_or_unknowns": [],
+  "notes": "Updated after onboarding: added Saturday hours and cloud services."
+}

@@ -1,0 +1,25 @@
+{
+  "agent_name": "Sample Company Inc. Support Agent",
+  "voice_style": "professional and friendly",
+  "version": "v1",
+  "key_variables": {
+    "timezone": "America/New_York",
+    "business_hours": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "start": "09:00",
+      "end": "17:00",
+      "timezone": "America/New_York"
+    },
+    "office_address": "123 Main St, Anytown, NY"
+  },
+  "system_prompt": "A smart phone agent following office/after-hours flows.",
+  "call_transfer_protocol": "Attempt to connect to designated contacts. If unavailable, follow fallback message.",
+  "transfer_failure_protocol": "Apologize and note that someone will call back ASAP.",
+  "tool_invocation_placeholders": []
+}
